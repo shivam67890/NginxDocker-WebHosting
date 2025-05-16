@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Power Ranger Team</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    h1, h2 {
+      color: #00ffff;
+    }
+    header {
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+    .tools, .team-members, .services-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem;
+    }
+    .tool, .member, .service-item {
+      background: #111;
+      border: 1px solid #00ffff;
+      border-radius: 8px;
+      padding: 1rem;
+      text-align: center;
+      width: 250px;
+      transition: transform 0.3s, background-color 0.3s;
+    }
+    .tool img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto 1rem;
+      transition: transform 0.3s;
+    }
+    .tool img:hover {
+      transform: scale(1.1);
+    }
+    .tool:hover, .member:hover, .service-item:hover {
+      background-color: rgba(17, 17, 17, 0.7);
+      transform: translateY(-5px);
+    }
+    .btn {
+      background-color: #00ffff;
+      color: #000;
+      border: none;
+      padding: 0.8rem 1.2rem;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+      font-size: 1rem;
+    }
+    .btn:hover {
+      background-color: #00e5e5;
+      transform: scale(1.05);
+    }
+    @media (max-width: 600px) {
+      .tool, .member, .service-item {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Power Ranger Team</h1>
+  </header>
+
+  <section>
+    <h2>Technologies</h2>
+    <div class="tools">
+      <div class="tool">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Nginx_logo.svg/2560px-Nginx_logo.svg.png" alt="Docker logo: a blue whale carrying containers">
+        <h3>NGINX</h3>
+        <p>NGINX is a high-performance HTTP and reverse proxy server, also used for load balancing and caching.</p>
+    </div>
+    <div class="tool">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Docker_(container_engine)_logo.svg/2560px-Docker_(container_engine)_logo.svg.png" alt="NGINX logo in green">
+        <h3>Docker</h3>
+        <p>Docker is an open platform for developing, shipping, and running applications inside containers.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Team Members</h2>
+    <div class="team-members">
+      <div class="member">
+        <h3>shivam shukla</h3>
+        <p>Developer</p>
+      </div>
+      <div class="member">
+        <h3>ritin chauhan</h3>
+        <p>Developer</p>
+      </div>
+      <div class="member">
+        <h3>sayan mandal</h3>
+        <p>Developer</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
